@@ -2,7 +2,7 @@ const axios = require("axios");
 require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const USERNAME = "vickkie";
+const USERNAME = process.env.GITHUB_USERNAME;
 const EXCEPTIONS = ["crnacura", "Cuberto", "vuejs", "dougkalash", "george0st", "codrops"]; // Replace with actual GitHub usernames
 
 const getFollowing = async () => {

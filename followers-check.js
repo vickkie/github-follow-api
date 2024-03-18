@@ -2,7 +2,7 @@ const axios = require("axios");
 require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const USERNAME = "vickkie"; //your GitHub username
+const USERNAME = process.env.GITHUB_USERNAME;
 
 const nonFollowers = [];
 
