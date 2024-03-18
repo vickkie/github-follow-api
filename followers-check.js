@@ -1,7 +1,7 @@
 const axios = require("axios");
-const fs = require("fs");
+require("dotenv").config();
 
-const GITHUB_TOKEN = ` ${secrets.UNFOLLOW_SECRET}`; //  GitHub token
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const USERNAME = "vickkie"; //your GitHub username
 
 const nonFollowers = [];

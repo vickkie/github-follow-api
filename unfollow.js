@@ -1,6 +1,7 @@
 const axios = require("axios");
+require("dotenv").config();
 
-const GITHUB_TOKEN = ` ${secrets.UNFOLLOW_SECRET}`;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const USERNAME = "vickkie";
 const EXCEPTIONS = ["crnacura", "Cuberto", "vuejs", "dougkalash", "george0st", "codrops"]; // Replace with actual GitHub usernames
 
