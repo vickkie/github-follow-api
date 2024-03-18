@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const GITHUB_TOKEN = ` ${secrets.Unfollower_secret}`;
+const GITHUB_TOKEN = ` ${secrets.UNFOLLOW_SECRET}`;
 const USERNAME = "vickkie";
 const EXCEPTIONS = ["crnacura", "Cuberto", "vuejs", "dougkalash", "george0st", "codrops"]; // Replace with actual GitHub usernames
 

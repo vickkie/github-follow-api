@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const GITHUB_TOKEN = ` ${secrets.Unfollower_secret}`; //  GitHub token
+const GITHUB_TOKEN = ` ${secrets.UNFOLLOW_SECRET}`; //  GitHub token
 const USERNAME = "vickkie"; //your GitHub username
 
 const nonFollowers = [];
