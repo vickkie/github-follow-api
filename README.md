@@ -21,7 +21,7 @@ This tool helps you analyze and manage your GitHub network of followers and the 
   ```
  - or (for ssh)
    ```
-     git@github.com:vickkie/github-follow-api.git
+    git clone git@github.com:vickkie/github-follow-api.git
    ```
 
 - Install the required Node.js modules by running
