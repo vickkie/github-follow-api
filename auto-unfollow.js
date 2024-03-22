@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const USERNAME = process.env.GITHUB_USERNAME;
-const EXCEPTIONS = ["crnacura", "Cuberto", "vuejs", "dougkalash", "george0st", "codrops"]; // Replace with actual GitHub usernames
+const EXCEPTIONS = ["crnacura", "Cuberto", "vuejs", "dougkalash", "codrops"]; // Replace with actual GitHub usernames exceptions
 
 const getFollowing = async () => {
   let following = [];
@@ -18,7 +18,8 @@ const getFollowing = async () => {
         },
       });
       following = following.concat(response.data.map((user) => user.login));
-      hasNextPage = response.data.length > 0;
+      // Check for 'next' link in the Link header to determine if there's a next page
+      hasNextPage = response.headers.link && response.headers.link.includes('rel="next"');
       page++;
     } catch (error) {
       console.error("Error fetching following list:", error);

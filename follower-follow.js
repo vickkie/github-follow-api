@@ -1,3 +1,5 @@
+//It auto follower those who follow you
+
 require("dotenv").config();
 const axios = require("axios");
 

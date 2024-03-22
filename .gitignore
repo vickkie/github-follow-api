@@ -2,3 +2,8 @@
 #follow this
 node_modules
 .env
+followers.txt
+following.txt
+nonFollowers.txt
+exception.txt
+new_users_list.txt

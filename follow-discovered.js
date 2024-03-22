@@ -1,3 +1,5 @@
+// requires you to run new-discover.js to get new names
+
 require("dotenv").config();
 const axios = require("axios");
 const fs = require("fs");
