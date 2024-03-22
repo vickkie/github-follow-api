@@ -1,16 +1,17 @@
 {
   "name": "github-follow",
   "version": "1.0.0",
-  "description": "",
-  "main": "followes-check.js",
+  "description": "This tool helps you analyze and manage your GitHub network of followers and the users you're following. It uses the GitHub API to fetch and process data about your network, allowing you to find users you're not following back, discover new users to follow, and more.",
+  "main": "followers-check.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "follow"
+    "follow",
+    "unfollow"
   ],
   "author": "uzitrake",
-  "license": "UNLICENSED",
+  "license": "MIT licence",
   "dependencies": {
     "axios": "^1.6.8",
     "dotenv": "^16.4.5"
