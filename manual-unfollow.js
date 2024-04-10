@@ -39,9 +39,9 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const unfollowNonFollowers = async () => {
   try {
+    const exceptions = await readFile("exception.txt"); // Read exceptions from file
     const following = await readFile("following.txt");
     const followers = await readFile("followers.txt");
-    const exceptions = await readFile("exception.txt"); // Read exceptions from file
 
     const nonFollowers = following.filter((user) => !followers.includes(user) && !exceptions.includes(user));
 
