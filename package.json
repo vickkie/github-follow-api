@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "This tool helps you analyze and manage your GitHub network of followers and the users you're following. It uses the GitHub API to fetch and process data about your network, allowing you to find users you're not following back, discover new users to follow, and more.",
   "main": "followers-check.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "start": "node non-follower.js",
+  "check": "node followers-check.js",
+  "unfollow": "node manual-unfollow.js",
+  "discover" :"node new-users.js",
+  "followback" : "node followers-follow.js",
+  "new-users": "node new-users.js"
+ },
   "keywords": [
     "follow",
     "unfollow"
